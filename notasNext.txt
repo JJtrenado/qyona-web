@@ -1,0 +1,16 @@
+empezamos con next.js
+nvm use 16.14.0
+    hago: npx create-next --typescript //es npx y no npm porque se va a ejecutar
+te pide el nombre
+----------------
+
+npm run nos dice los sripts que tenemos en nuestra aplicación
+    start ----> inicia nueestra aplicación
+    dev ------> modo desarrollo
+    build ----> crea los estáticos para deployar nuestra aplicación (deploy: llevar un sitio web a internet)
+
+----------------
+inicializamos el proyecto:
+    npm run dev
+        inicializa el servidor
+        crea cosas y aparte crea la carpeta .next (hace un bundle, un build con todos los estáticos del servidor y lo que ahce es que si hacemos un cambio ba a ser super rapido)

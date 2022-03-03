@@ -1,0 +1,63 @@
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+sudo apt install cmdtest ---------- para instalar yarn
+
+
+con esto tengo node instalado que sirve para:
+    correr JavaScript de forma asíncrona en el lado del servidor
+
+-------------------------------------------------
+el apt instala una version de node antigua
+asi que haya que hacer esto para controlar la version:
+
+        Si quisieramos poder cambiar la version de node en cualquier momento deberemos de utilizar la herramienta nvm
+
+        Para instalar nvm necesitaremos previamente wget
+        Podemos comprobar si tenemos wget instalado simplemente escribiendo wget en la consola.
+        En caso de no tener wget, se instalará con:
+
+        $ sudo apt install wget
+
+        $ sudo pacman -S wget
+
+        Para instalar nvm utilizaremos:
+
+        $ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
+        $ source ~/.profile
+
+        Para saber las versiones de node disponibles utilizaremos:
+
+        $ nvm ls-remote
+
+        Para instalar una version en especifico utilizaremos:
+
+        $ nvm install numeroVersion
+
+        Para desinstalar node en caso que quisieramos primero tendremos que desactivar nvm con:
+
+        $ nvm deactivate
+
+        Y desinstalar las versiones de node que utilizemos con:
+
+        $ nvm uninstall numeroVersion
+-------------------------------------------------
+
+y tengo npm instalado que sirve para:
+    NPM es un gestor de paquetes de JavaScript
+
+he instalado typescript que es javascript vitaminado:
+    sudo npm install -g typescript
+
+pero el navegador no entiende typescript entonces hay que pasarlo a javascript:
+    
+    primero hacemos: tsc --init para crear el proyecto
+    y tambien npm init -y
+
+    se hace: tsc nombre.ts
+    o también: tsc -build que creo que sirve para pasar todos los archivos
+    y nos crea nombre.js
+
+si quieres ejecutarlo es:
+    node nombre.js

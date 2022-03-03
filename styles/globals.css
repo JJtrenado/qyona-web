@@ -1,16 +1,79 @@
 html,
-body {
+body{
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  max-width: 1920px;
 }
 
-* {
-  box-sizing: border-box;
+.gridLayout{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 'header'
+                       'historia'
+                       'spawn'
+                       'footer';
 }
+
+
+
+@media (min-width: 700px){
+  .gridLayout{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 'header header'
+                         'historia spawn'
+                         'footer footer';
+  }
+}
+
+@media (min-width: 900px){
+  .gridLayout{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 60% auto;
+    grid-template-areas: 'header header'
+                         'historia spawn'
+                         'footer footer';
+  }
+}
+
+.title {
+  position: absolute;
+  font-size: 4em;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  color: white;
+}
+
+header{
+  grid-area: header;
+}
+.c2{
+  grid-area: historia;
+  text-align: left;
+}
+
+.c3{
+  grid-area: spawn;
+}
+
+
+footer,#footerText{
+  display: inline-block;
+  color: white;
+  grid-area: footer;
+  padding: 1.5em;
+  text-align: left;
+  background-color:rgb(80, 80, 80);
+}
+
