@@ -10,7 +10,7 @@ body{
   margin: 0 auto;
   width: 90%;
   text-align: center;
-  max-width: 1920px;
+  max-width: 1500px;
 }
 
 .gridLayout{
@@ -22,9 +22,7 @@ body{
                        'footer';
 }
 
-
-
-@media (min-width: 700px){
+@media (min-width: 780px){
   .gridLayout{
     display: grid;
     grid-gap: 20px;
@@ -39,7 +37,18 @@ body{
   .gridLayout{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 58% auto;
+    grid-template-areas: 'header header'
+                         'historia spawn'
+                         'footer footer';
+  }
+}
+
+@media (min-width: 1200px){
+  .gridLayout{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 65% auto;
     grid-template-areas: 'header header'
                          'historia spawn'
                          'footer footer';

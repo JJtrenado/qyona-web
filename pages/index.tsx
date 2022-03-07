@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <div class="gridLayout">
 
-        <header class="caja c1">
+        <header className="caja c1">
           <h1 class="title">Qyona's Earth</h1>
           <img src="/background2.jpeg" width="100%"></img>
         </header>
